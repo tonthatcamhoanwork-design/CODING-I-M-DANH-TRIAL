@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="vi"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Hệ Thống Điểm Danh - Thầy Hoan&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--primary-blue: #0056b3;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--success-green: #28a745;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--danger-red: #dc3545;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--bg-light: #f4f7f9;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--text-dark: #2d3436;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--bg-light);<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.app-container {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 500px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #ffffff;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 20px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 25px rgba(0,0,0,0.05);<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.header { text-align: center; margin-bottom: 25px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.header h1 { color: var(--primary-blue); margin: 0; font-size: 22px; text-transform: uppercase; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.header p { color: #636e72; margin-top: 5px; font-size: 14px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.status-summary {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-between;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #f8f9fa;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 12px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 4px solid var(--primary-blue);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>table { width: 100%; border-collapse: collapse; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>td { padding: 16px 8px; border-bottom: 1px solid #f1f2f6; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.student-info { display: flex; flex-direction: column; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.student-name { font-weight: 700; color: var(--text-dark); font-size: 15px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.student-sub { font-size: 11px; color: #b2bec3; margin-top: 2px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.action-group { display: flex; gap: 8px; justify-content: flex-end; }</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn-status {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1.5px solid #dfe6e9;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: white;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 8px 15px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 12px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 700;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: 0.2s;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #636e72;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-width: 70px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Màu khi chọn */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn-status.active-co {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--success-green);<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: var(--success-green);<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 10px rgba(40, 167, 69, 0.2);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn-status.active-vang {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--danger-red);<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: var(--danger-red);<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 10px rgba(220, 53, 69, 0.2);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.footer-action { margin-top: 30px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.submit-btn {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 16px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 12px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--primary-blue);<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 700;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 6px 20px rgba(0, 86, 179, 0.2);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.submit-btn:hover { background: #004494; transform: translateY(-2px); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.submit-btn:disabled { background: #b2bec3; transform: none; cursor: not-allowed; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>#msg-box { text-align: center; margin-top: 15px; font-weight: 600; font-size: 14px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="app-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;QUẢN LÝ ĐIỂM DANH&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Thầy Hoan • IELTS - VSTEP - PET&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="status-summary"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span id="display-date"&gt;Đang tải ngày...&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span&gt;Sĩ số: &lt;span id="total-count"&gt;0&lt;/span&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tbody id="list-students"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/table&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="footer-action"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button id="main-btn" class="submit-btn" onclick="submitAttendance()"&gt;LƯU DỮ LIỆU ĐIỂM DANH&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="msg-box"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/**</p>
+<p class="p1"><span class="Apple-converted-space">     </span>* CẤU HÌNH DÀNH CHO THẦY HOAN</p>
+<p class="p1"><span class="Apple-converted-space">     </span>*/</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// 1. Thầy thay đổi danh sách học sinh của mình ở đây:</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const myStudents = ["Nguyệt", "Ngọc Duy", "Linh Đan", "Tommy", "Tra", "Amanda", "Moon"];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// 2. Thầy dán Link Web App từ Google Apps Script vào đây:</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const GOOGLE_SCRIPT_URL = "DÁN_LINK_CỦA_THẦY_VÀO_ĐÂY";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Khởi tạo ngày và danh sách</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('display-date').innerText = new Date().toLocaleDateString('vi-VN');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('total-count').innerText = myStudents.length;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const listElement = document.getElementById('list-students');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>myStudents.forEach((name, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const row = `</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="student-info"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="student-name"&gt;${name}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="student-sub"&gt;ID: ${202600 + index}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="action-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button class="btn-status" onclick="set(this, 'Có mặt')"&gt;CÓ&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button class="btn-status" onclick="set(this, 'Vắng')"&gt;VẮNG&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>listElement.innerHTML += row;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Hàm chọn trạng thái</p>
+<p class="p1"><span class="Apple-converted-space">    </span>function set(el, status) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const parent = el.parentElement;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>parent.querySelectorAll('button').forEach(b =&gt; b.classList.remove('active-co', 'active-vang'));</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if(status === 'Có mặt') el.classList.add('active-co');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>else el.classList.add('active-vang');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Hàm gửi dữ liệu</p>
+<p class="p1"><span class="Apple-converted-space">    </span>async function submitAttendance() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const rows = document.querySelectorAll('#list-students tr');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let data = [];</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>rows.forEach(r =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const name = r.querySelector('.student-name').innerText;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const activeBtn = r.querySelector('.active-co, .active-vang');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if(activeBtn) data.push({ name: name, status: activeBtn.innerText });</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>if(data.length &lt; myStudents.length) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>alert("⚠️ Thầy ơi, còn học sinh chưa được điểm danh!");</p>
+<p class="p1"><span class="Apple-converted-space">            </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const btn = document.getElementById('main-btn');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const msg = document.getElementById('msg-box');</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>btn.disabled = true;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>msg.innerHTML = "⏳ Đang gửi lên Google Sheets...";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>msg.style.color = "#f39c12";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>await fetch(GOOGLE_SCRIPT_URL, {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>method: 'POST',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>mode: 'no-cors', // Tránh lỗi bảo mật trình duyệt</p>
+<p class="p1"><span class="Apple-converted-space">                </span>body: JSON.stringify(data)</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>msg.innerHTML = "✅ LƯU THÀNH CÔNG!";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>msg.style.color = "#27ae60";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>alert("Dữ liệu điểm danh đã được gửi vào file Excel của thầy.");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>} catch (e) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>msg.innerHTML = "❌ LỖI KẾT NỐI!";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>msg.style.color = "#e74c3c";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>console.error(e);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>} finally {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>btn.disabled = false;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
